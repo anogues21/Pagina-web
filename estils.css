@@ -1,0 +1,14 @@
+p {
+    color: black;
+    text-align: left;
+  }
+
+a {
+    color:aquamarine;
+    background-color: darkgray;
+}
+
+div {
+    background-color: black;
+    border: 10px;
+}
