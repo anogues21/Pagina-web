@@ -4,11 +4,55 @@ p {
   }
 
 a {
-    color:aquamarine;
-    background-color: darkgray;
+    color:rgb(23, 152, 161);
+    background-color: rgb(255, 255, 255);
 }
 
 div {
-    background-color: black;
-    border: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 10px solid black;
+    font-family:monospace;    
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cccccc;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+    font-family:monospace;
+    text-size-adjust: 8px;
+    text-shadow: 0.4px 0.2px 5px rgb(0, 0, 0);
+
+}
+
+.dropdown-content a:hover {
+    background-color: #88acbb;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+span {
+border:2px solid darkgrey;
+
 }
