@@ -45,9 +45,7 @@ hr{
         text-shadow: 5px 5px 5px rgb(0, 0, 0);
         color:rgb(0, 0, 0);
         font-family: monospace;
-        min-height:100px;
-        border: 10px;
-
+        
     }
     
       ul {
