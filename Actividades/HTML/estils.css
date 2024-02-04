@@ -37,7 +37,7 @@ hr{
     
     
     a {
-        color: rgb(52, 144, 187);
+        color: rgb(187, 140, 52);
         font-family: monospace;
         text-shadow: 0px 1px 2px black; 
     }
@@ -146,22 +146,22 @@ hr{
 
     .section {
       margin-bottom: 1rem;
+    
   }
   
   .section-title {
-      background-image: linear-gradient(180deg, rgb(98, 195, 202), rgb(107, 194, 146));
+      background-image: linear-gradient(180deg, rgb(202, 136, 98), rgb(194, 164, 107));
       color: white;
       padding: 10px 20px;
       border: none;
       cursor: pointer;
-      
       text-align: left;
       transition: background-image 0.3s;
   }
   
   .section-content {
       padding: 10px 20px;
-      display: none;
+      display: inline-grid;
       color: rgb(0, 0, 0);
       padding: 3px 10px;
 
@@ -169,13 +169,13 @@ hr{
   }
   
   .section-title:focus + .section-content {
-      display: block;
+    display: inline-grid;
       
       
   }
   
   .section-title:focus {
-    background-image: linear-gradient(180deg, rgb(114, 114, 114), rgb(70, 151, 107));
+    background-image: linear-gradient(180deg, rgb(168, 119, 79), rgb(255, 113, 113));
   }
 
   .section-title a:hover {
@@ -184,4 +184,8 @@ hr{
 
   body {
     background-color: rgb(224, 224, 224);
+  }
+
+  .button:focus-visible {
+display: block;
   }

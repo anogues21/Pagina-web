@@ -131,11 +131,14 @@ hr{
     }
 
     .title-content {
-        background-color: rgb(226, 226, 226);
+        background-color: rgb(185, 184, 184);
 
     }
 
     .photo-face {
         max-width: 100px;
         border:1px black dashed;
+    }
+    body {
+      background-color: rgb(224, 224, 224);
     }
