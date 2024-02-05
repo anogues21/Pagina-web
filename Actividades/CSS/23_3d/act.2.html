@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.image-container {
+    perspective: 200px;
+  /* Por defecto */
+  perspective-origin: center;
+  /* Arriba centrado */
+  perspective-origin: top;
+  /* Abajo izquierda */
+  perspective-origin: bottom left;
+  /* Personalizado */
+  perspective-origin: 400px 500px;
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  position: absolute; /* position the images relative to the container */
+  top: 0;
+  left: 0;
+}
+
+.image-wall {
+  width: 400px; /* set the desired width of the cropped area */
+  height: 400px; /* set the desired height of the cropped area */
+  overflow: hidden; /* hide the parts of the image that exceed the container's dimensions */
+  position: relative; /* set the positioning context for the child image */
+}
+
+.image-wall img {
+  position: absolute; /* position the image relative to the container */
+  top: -80%; /* shift the image up by 50% of its height */
+  left: -80%; /* shift the image left by 50% of its width */
+  min-width: 50%; /* set the minimum width of the image to 100% of its container */
+  min-height: 50%; /* set the minimum height of the image to 100% of its container */
+}
+
+.image-floor {
+    width: 400px;
+  height: 200px; 
+  overflow: hidden;
+  transform: rotateX(90deg);
+  transform: rotate3d(1, 0, 0, 45deg);
+  top: 0px;
+left: 0px;
+  position: absolute;
+  
+
+}
+
+.image-floor img {
+    position: absolute; 
+    
+
+    
+}
+
+</style>
+<body>
+    <div class="image-container">
+    <div class="image-wall">
+        <img src="wall.jpg" alt="Wall">
+      </div>
+      <div class="image-floor">
+        <img src="floor.jpg" alt="floor">
+      </div>
+    </div>
+</body>
+</html>

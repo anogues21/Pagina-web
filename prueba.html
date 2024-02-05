@@ -3,40 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <style>
-  .section {
-    margin-bottom: 1rem;
+    .image-container {
+  perspective: 300px; /* set the perspective distance to create the 3D effect */
+  position: relative; /* set the positioning context for the child images */
 }
 
-.section-title {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s;
+.image-container img {
+  position: absolute; /* position the images relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.section-content {
-    padding: 10px 20px;
-    display: none;
-}
-
-.section-title:focus + .section-content {
-    display: block;
-}
-
-.section-title:focus {
-    background-color: #3e8e41;
+.foreground-image {
+  transform: rotateX(20deg) rotateY(-20deg); /* rotate the foreground image along the X and Y axes */
+  transform-style: preserve-3d; /* ensure the child elements of this element are rendered in 3D space */
 }
 </style>
 <body>
-    
-    <script src="scripts.js"></script>
+    <div class="image-container">
+        <img src="Actividades/CSS/23_3d/wall.jpg" alt="Your Background Image">
+        <img src="Actividades/CSS/23_3d/floor.jpg" alt="Your Foreground Image" class="foreground-image">
+      </div>  
 </body>
 </html>
