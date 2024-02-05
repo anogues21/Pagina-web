@@ -158,35 +158,19 @@ hr{
     font-family: monospace;
     text-align: left;
     transition: background-image 0.3s;
+    text-shadow: 1px 2px 0px black;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
-.section-content {
-    padding: 10px 20px;
-    display: inline-grid;
-    color: rgb(0, 0, 0);
-    padding: 3px 10px;
-    
-
-    
-}
-
-.section-title:focus + .section-content {
-  display: inline-grid;
-  position: sticky;
-  visibility: fixed;
-    
-    
-}
-
-.section-title:focus {
-  background-image: linear-gradient(180deg, rgb(57, 108, 150), rgb(93, 194, 152));
+.section-content a {
+  font-size: larger;
   display: block;
-  flex-direction: column;
-  
 }
+  
 
-.section-title a:hover {
-  background-color: cadetblue;
+.section-title:hover {
+  background-image: linear-gradient(180deg, rgb(45, 93, 97), rgb(64, 100, 121));
 }
 
 body {

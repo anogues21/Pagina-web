@@ -6,28 +6,31 @@
     <title>Document</title>
 </head>
 <style>
-    .image-container {
-  perspective: 300px; /* set the perspective distance to create the 3D effect */
-  position: relative; /* set the positioning context for the child images */
+body {
+  display: block;
+}
+.dropdown {
+  
 }
 
-.image-container img {
-  position: absolute; /* position the images relative to the container */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+button {
+  background-color: aqua;
+  min-width: 300px;
 }
 
-.foreground-image {
-  transform: rotateX(20deg) rotateY(-20deg); /* rotate the foreground image along the X and Y axes */
-  transform-style: preserve-3d; /* ensure the child elements of this element are rendered in 3D space */
+.down-move {
+
+}
+
+.dropdown-content {
+  display: inline-grid;
+
 }
 </style>
 <body>
-    <div class="image-container">
-        <img src="Actividades/CSS/23_3d/wall.jpg" alt="Your Background Image">
-        <img src="Actividades/CSS/23_3d/floor.jpg" alt="Your Foreground Image" class="foreground-image">
-      </div>  
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
 </body>
 </html>
