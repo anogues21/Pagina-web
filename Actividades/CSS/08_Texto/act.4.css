@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Typewriter;
+    src: local("JMH Typewriter Regular"), 
+    local("Typewriter-Regular"),
+    url(jmh_type.ttf)
+  }  
+
+  @font-face {
+    font-family: Long Shot;
+    src: local("Long Shot"), 
+    local("Long-Shot"),
+    url(longshot.ttf)
+  }    
+
+h1 {
+    text-align: center;
+    font-family: "typewriter";
+    letter-spacing: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Long Shot";
+    font-size: 50px;
+    letter-spacing: 1rem;
+}
