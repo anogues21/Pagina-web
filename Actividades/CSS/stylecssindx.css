@@ -38,9 +38,9 @@ hr{
   
   
   a {
-      color: rgb(52, 144, 187);
+      color: rgb(76, 178, 224);
       font-family: monospace;
-      text-shadow: 0px 1px 2px black; 
+      text-shadow: 1px 1px 0px rgb(0, 0, 0);
   }
   
   span {
@@ -98,7 +98,9 @@ hr{
   }
 
   a:hover {
-      color: rgb(57, 179, 168);
+      color: rgb(108, 130, 255);
+      text-shadow: 1px 1px 0px white;
+
   }
 
   h1 {
@@ -158,19 +160,25 @@ hr{
     font-family: monospace;
     text-align: left;
     transition: background-image 0.3s;
-    text-shadow: 1px 2px 0px black;
+    text-shadow: 3px 3px 0px black;
     font-size: xx-large;
     font-weight: bolder;
 }
 
+
+
+
 .section-content a {
   font-size: larger;
   display: block;
+  
+  
 }
   
 
 .section-title:hover {
-  background-image: linear-gradient(180deg, rgb(45, 93, 97), rgb(64, 100, 121));
+  background-image: linear-gradient(90deg, rgb(45, 93, 97), rgb(143, 153, 158));
+  cursor: context-menu;
 }
 
 body {
@@ -217,3 +225,6 @@ body {
         max-width: 100px;
         border:1px black dashed;
     }
+
+
+
