@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.faq-question:hover + .faq-answer {
+background-color: #666;
+    display:block
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #f4f4f4;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.faq-question h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.faq-icon {
+    float: right;
+    font-size: 24px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.faq-answer {
+    padding: 20px;
+    display: none;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq-item:target .faq-answer {
+    display: block;
+}
+
+.faq-item:target .faq-icon {
+    color: #007bff;
+}
+        
+    </style>
+    <title>Preguntas Frecuentes</title>
+</head>
+<body>
+    <div class="container">
+        <section class="faq-item">
+            <div class="faq-question">
+                <h2>¿Qué métodos de pago se ofrecen?</h2>
+                <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer">
+                <p>Ofrecemos diferentes métodos de pago, incluyendo tarjetas de crédito y débito, PayPal, y transferencia bancaria.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <div class="faq-question">
+                <h2>¿Cómo puedo cambiarme a un plan diferente?</h2>
+                <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer">
+                <p>Puedes cambiarte a un plan nuevo en cualquier momento. Simplemente inicia sesión en tu cuenta y ve a la página de Facturación. Selecciona el plan al que deseas cambiarte y podrás empezar a usar las nuevas funciones de inmediato.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <div class="faq-question">
+                <h2>¿Puedo optar por comprar créditos?</h2>
+                <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer">
+                <p>Sí, ofrecemos la opción de comprar créditos para aquellos que no quieren suscribirse a un plan mensual.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <div class="faq-question">
+                <h2>¿Hay precios especiales para quienes envían grandes volúmenes de correos electrónicos?</h2>
+                <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer">
+                <p>Sí, ofrecemos precios especiales para aquellos que envían grandes volúmenes de correos electrónicos. Por favor, contáctanos para obtener más información.</p>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <div class="faq-question">
+                <h2>¿Qué sucede si llego al límite de envíos o contactos?</h2>
+                <div class="faq-icon">+</div>
+            </div>
+            <div class="faq-answer">
+                <p>Si llegas al límite de envíos o contactos en tu plan, se te cobrará una tarifa adicional por cada envío adicional. Te recomendamos actualizar a un plan superior si piensas superar regularmente tus límites actuales.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
