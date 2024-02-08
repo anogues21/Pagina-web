@@ -177,8 +177,21 @@ hr{
   
 
 .section-title:hover {
-  background-image: linear-gradient(90deg, rgb(45, 93, 97), rgb(143, 153, 158));
+  background-image: url('background-section.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(50%);
   cursor: context-menu;
+  color: green;
+}
+
+.section-title:focus {
+  background-image: url('background-section.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  cursor: context-menu;
+  
 }
 
 body {

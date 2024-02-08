@@ -80,7 +80,7 @@ hr{
       }
     
       li a:hover {
-        background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(159, 255, 210));
+        background-image: linear-gradient(180deg, rgb(51, 255, 0), rgb(0, 88, 7));
         color:black;
 
       }
@@ -107,25 +107,28 @@ hr{
 
     h4 {
         text-align: center;
+        color: #25ff38;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     h2 {
-        font-family: sans-serif;
-        max-height: 30px;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
+        font-family: monospace;
+text-align: center;
         display:block;
         font-size: 2em;
+        color: #25ff38;
+        text-decoration: underline;
+        
     }
 
     h3 {
-        font-family: sans-serif;
+        font-family: monospace;
         max-height: 30px;
         display: block;
         font-size: 0.8em;
         margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
+        
+        margin-inline-start: 10px;
         margin-inline-end: 0px;
         initial-letter: 1px;
     }
@@ -140,5 +143,81 @@ hr{
         border:1px black dashed;
     }
     body {
-      background-color: rgb(224, 224, 224);
+      background-color: rgb(0, 0, 0);
+    }
+
+
+    .title-web {
+      font-size: 16px;
+      text-align: left;
+      color: #25ff38;
+      border: 2px solid #25ff38;
+      cursor: not-allowed;
+      
+    }
+
+    span {
+      animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+      0% { color: black; }
+      
+      100% { color: rgb(20, 255, 20); }
+    }
+
+    .hr-green {
+      color: #25ff38;
+    }
+
+    .name-text {
+      color: red;
+      text-decoration: underline;
+    }
+
+    p {
+      color: #25ff38;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+    }
+
+    .html-ascii {
+      max-width: 250px;
+
+    }
+
+    .html-ascii:hover {
+      filter: grayscale(50%);
+    }
+
+    .HTML-Section {
+      color:#ff7c25;
+      font-family: 'Courier New', Courier, monospace;
+      padding-left: 10%;
+      width: 45%;
+    }
+
+    h5 {
+      padding-left: 70px;
+    }
+
+    .logos-ascii {
+      display: flex;
+    }
+
+    .CSS-Section {
+      color:#2596ff;
+      font-family: 'Courier New', Courier, monospace;
+      padding-left: 10%;
+      width: 45%;
+    }
+
+    
+    .css-ascii {
+      max-width: 270px;
+      
+    }
+
+    .css-ascii:hover {
+      filter: grayscale(50%);
     }
