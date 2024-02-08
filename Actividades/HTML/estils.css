@@ -149,38 +149,7 @@ hr{
     
   }
   
-  .section-title {
-      background-image: linear-gradient(180deg, rgb(202, 136, 98), rgb(194, 164, 107));
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      text-align: left;
-      transition: background-image 0.3s;
-  }
-  
-  .section-content {
-      padding: 10px 20px;
-      display: inline-grid;
-      color: rgb(0, 0, 0);
-      padding: 3px 10px;
 
-      
-  }
-  
-  .section-title:focus + .section-content {
-    display: inline-grid;
-      
-      
-  }
-  
-  .section-title:focus {
-    background-image: linear-gradient(180deg, rgb(168, 119, 79), rgb(255, 113, 113));
-  }
-
-  .section-title a:hover {
-    background-color: cadetblue;
-  }
 
   body {
     background-color: rgb(224, 224, 224);
@@ -189,3 +158,46 @@ hr{
   .button:focus-visible {
 display: block;
   }
+
+  .section-title {
+    background-image: linear-gradient(180deg, rgb(202, 153, 98), rgb(194, 146, 107));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    text-align: left;
+    transition: background-image 0.3s;
+    text-shadow: 3px 3px 0px black;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+
+
+.section-content a {
+  font-size: larger;
+  display: block;
+  
+  
+}
+  
+
+.section-title:hover {
+  background-image: url('background-section.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(50%);
+  cursor: context-menu;
+  color: green;
+}
+
+.section-title:focus {
+  background-image: url('background-section.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  cursor: context-menu;
+  
+}
