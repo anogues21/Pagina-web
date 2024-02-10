@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/search\_cameras" method="get">
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search"><br>
+        
+        <label for="brand">Brand:</label>
+        <select id="brand" name="brand">
+          <option value="Canon">Canon</option>
+          <option value="Nikon">Nikon</option>
+          <option value="Sony">Sony</option>
+          <option value="Pentax">Pentax</option>
+        </select><br>
+        
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+          <option value="DSLR">DSLR</option>
+          <option value="Mirrorless">Mirrorless</option>
+          <option value="Point-and-Shoot">Point-and-Shoot</option>
+          <option value="Camera Phone">Camera Phone</option>
+        </select><br>
+        
+        <label for="min_price">Precio Mínimo:</label>
+        <input type="number" id="min_price" name="min_price" min="0"><br>
+        
+        <label for="max_price">Precio Máximo:</label>
+        <input type="number" id="max_price" name="max_price" min="0"><br>
+        
+        <input type="submit" value="Buscar">
+      </form>
+</body>
+</html>
