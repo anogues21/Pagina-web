@@ -203,6 +203,8 @@ text-align: center;
 
     .logos-ascii {
       display: flex;
+      overflow: auto;
+      align-items: center;
     }
 
     .CSS-Section {
